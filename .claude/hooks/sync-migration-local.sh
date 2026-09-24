@@ -15,7 +15,8 @@ if [ -z "$NAME" ] || [ -z "$SQL" ]; then
   exit 0
 fi
 
-MIGRATIONS_DIR="${CLAUDE_PROJECT_DIR:-$(pwd)}/supabase/migrations"
+PROJECT_DIR="${AGENT_PROJECT_DIR:-${CLAUDE_PROJECT_DIR:-$(pwd)}}"
+MIGRATIONS_DIR="${PROJECT_DIR}/supabase/migrations"
 
 if [ ! -d "$MIGRATIONS_DIR" ]; then
   exit 0

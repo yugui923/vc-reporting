@@ -1,6 +1,6 @@
 # Memo Agent — Build Orchestration Plan
 
-**Audience:** Claude Code, working inside the `tdavidson/reporting` repository
+**Audience:** AI coding agents working inside the `tdavidson/reporting` repository
 **Status:** Ready to execute
 **Estimated total scope:** 6 phases over ~6-9 weeks of focused work
 
@@ -511,7 +511,7 @@ When all six phases are complete, the user flips Feature Visibility for "Diligen
 
 ## 14. Resuming an in-progress build
 
-If you're a Claude Code session picking up where a prior session left off — or if you're not sure whether this is a fresh start or a resume — work through this protocol before doing anything else.
+If you're an AI coding agent picking up where a prior session left off — or if you're not sure whether this is a fresh start or a resume — work through this protocol before doing anything else.
 
 ### 14.1 Determine state
 

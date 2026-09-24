@@ -49,7 +49,7 @@ New migration `supabase/migrations/2026xxxx_call_transcripts.sql`:
   created_at timestamptz not null default now()
   ```
   Index on `(document_id, start_ms)`.
-- **Required**: include explicit Data API grants + RLS + policies per `CLAUDE.md` conventions:
+- **Required**: include explicit Data API grants + RLS + policies per `AGENTS.md` conventions:
   - `grant select on public.diligence_call_transcripts to anon;`
   - `grant select, insert, update, delete on public.diligence_call_transcripts to authenticated, service_role;`
   - `alter table ... enable row level security;`

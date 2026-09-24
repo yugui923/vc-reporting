@@ -12,7 +12,7 @@ import { runChecklistAssessmentJob } from '@/lib/memo-agent/jobs/checklist-asses
 
 /**
  * Memo Agent worker. Triggered by Vercel cron every minute (per
- * BUILD_PLAN_FOR_CLAUDE_CODE.md decision). Claims one pending job from
+ * BUILD_PLAN_FOR_AI_AGENTS.md decision). Claims one pending job from
  * `memo_agent_jobs`, dispatches it to the right stage handler, and writes
  * the outcome back. Designed to fit comfortably inside a 120s function
  * — long stages must internally chunk to that ceiling.

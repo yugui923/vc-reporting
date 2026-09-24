@@ -23,7 +23,7 @@
 -- inbound-deals (inbound_deals) feature without forcing partners to rename
 -- the natural-language word "deal" everywhere in the UI.
 --
--- This file is the handoff copy. Phase 1 task 1.2 of BUILD_PLAN_FOR_CLAUDE_CODE.md
+-- This file is the handoff copy. Phase 1 task 1.2 of BUILD_PLAN_FOR_AI_AGENTS.md
 -- moves it to supabase/migrations/<timestamp>_memo_agent.sql with the project's
 -- standard YYYYMMDDHHMMSS prefix.
 -- =============================================================================

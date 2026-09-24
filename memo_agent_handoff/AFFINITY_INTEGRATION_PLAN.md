@@ -1,6 +1,6 @@
 # Affinity Integration — Build Plan
 
-**Audience:** Claude Code, working inside the `tdavidson/reporting` repository
+**Audience:** AI coding agents working inside the `tdavidson/reporting` repository
 **Status:** Draft, awaiting answers to Section 9 before execution
 **Estimated scope:** 4 phases over ~3 weeks of focused work (A–C; D is out of v1)
 
@@ -22,7 +22,7 @@ Read [`INTEGRATION.md`](./INTEGRATION.md) first if you don't already know the br
 
 **1.5 Last-write-wins is the v1 conflict policy.** Don't attempt drift detection in v1. Document the policy on the settings page so partners know that direct edits in Affinity will be overwritten on the next push.
 
-**1.6 Follow the data-grants convention.** Every new table gets explicit Data API grants per `CLAUDE.md` (Repo conventions). The template at the top of that file is the source of truth.
+**1.6 Follow the data-grants convention.** Every new table gets explicit Data API grants per `AGENTS.md` (Repo conventions). The template at the top of that file is the source of truth.
 
 **1.7 Don't touch unrelated code.** Affinity is its own slice. If you spot something to fix in Diligence proper, leave a TODO and keep moving.
 
@@ -151,7 +151,7 @@ The goal of Phase A is a usable sync button that pushes the deal name and a sing
 - Subsequent clicks update the same opportunity.
 - The deal row stores the `affinity_opportunity_id` after first sync.
 - Job failures surface in `JobStatusLine` with the Affinity API error message.
-- All migrations run cleanly on a fresh Supabase project per the `CLAUDE.md` grants convention.
+- All migrations run cleanly on a fresh Supabase project per the `AGENTS.md` grants convention.
 
 ---
 
@@ -177,7 +177,7 @@ Phase A hardcodes one field. Phase B lets the fund admin map every field we want
   );
   ```
 
-  Apply the full grants + RLS template from `CLAUDE.md`. Migrate the Phase-A `affinity_default_status_field_id` / `affinity_default_status_value_map` columns INTO this table on apply, then drop those columns. The Phase-A columns become an entry where `our_field = 'deal_status'`.
+  Apply the full grants + RLS template from `AGENTS.md`. Migrate the Phase-A `affinity_default_status_field_id` / `affinity_default_status_value_map` columns INTO this table on apply, then drop those columns. The Phase-A columns become an entry where `our_field = 'deal_status'`.
 
 - [ ] **B.2 — Settings UI — field mapping table.**
   Replace the Phase A "single field" UI with a full mapping table. Left column: our fields (fixed list). Right column: dropdown of Affinity fields from `client.listFields()`. For dropdown-typed Affinity fields, expand a sub-table to map our values to their option IDs.
