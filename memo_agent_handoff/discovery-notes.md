@@ -2,7 +2,7 @@
 
 **Last updated:** 2026-05-07
 **Repository:** `tdavidson/reporting`
-**Author:** AI coding agent, during plan-editing pass
+**Author:** Claude Code, during plan-editing pass
 
 This file is the canonical Phase 0 deliverable per Section 3 of `BUILD_PLAN_FOR_AI_AGENTS.md`. It answers every discovery question with file paths and snippets, and captures the gaps where the existing platform doesn't already provide what the Memo Agent needs.
 
